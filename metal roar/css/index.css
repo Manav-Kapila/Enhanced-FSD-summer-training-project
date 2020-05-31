@@ -1,0 +1,99 @@
+body {
+    background-image: url(../wallpaper.jpg);
+    height: 100%;
+    background-repeat:no-repeat;
+    background-position: top;
+    z-index: -1;
+    background-size: cover;
+    background-color: darkgray;
+    margin: 0 !important;
+    background-size: auto !important;
+    overflow: hidden;
+    display: block;
+    /*
+    background-attachment: fixed;
+    */
+}
+
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+
+
+/*center aligning all post and create post buttons */
+
+.postButtons {
+    text-align: center;
+    margin-top: 10%;
+    padding: 2%;
+}
+
+
+/* adding background color to add post ans create
+    post buttons     */
+
+#all_post,
+#create_post {
+    background-color: #9cccfd;
+    font-weight: bold;
+    border-radius: 90px;
+}
+
+
+/* Style for the content field in the createPostModal */
+
+#createPost {
+    background-color: #f1f1f1;
+    height: auto;
+    border: none;
+    outline: none;
+    width: 98%;
+    padding: 10px;
+    display: block;
+    resize: none;
+}
+
+#create-post-modal-content {
+    padding: 10px;
+    width: 90%;
+}
+
+
+/* styling create post button */
+
+#createPOSTbutton {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: rgb(9, 165, 43);
+    margin-left: 50%;
+}
+
+
+/*align heading to center   */
+
+#create-post-modal-content h2 {
+    text-align: center;
+}
+
+/* Respomsive media queries   */
+
+@media screen and (max-width:680px){
+ 
+    #myLogo{
+        font-size: 36px;
+    }
+     #tag{
+        font-size: 16px;
+    }
+    #in_up {
+        padding: 0;
+        }
+    #up_modal, #in_modal{
+        border-radius: 50%;
+        font-size: 10px;
+    }
+    div.postButtons {
+       margin-top: 10em;
+        width: 100%;
+    }   
+}

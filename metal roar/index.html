@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+    
+    
+
+</head>
+    
+<body>
+    <div id="main-container-div">
+        <!-- Header content -->
+        <div class="header">
+            <div id="logo">
+                <p id="myLogo">Infinity&Beyond</p>
+                <p id="tag">Have to think BIG to be BIG</p>
+            </div>
+            <div id="in_up">
+                <button id="in_modal">Sign In</button>
+                <button id="up_modal">Sign Up</button>
+                <!-- adding the sign in form-->
+
+
+            </div>
+        </div>
+        <!-- post button are defined bellow    -->
+        <div class="postButtons">
+            <button id="all_post" class="post"><p>All Posts</p></button>
+            <button id="create_post" class="post"><p>Create Post</p></button>
+        </div>
+    </div>
+    <!-- adding the sign in form-->
+    <!--Step 1:Adding HTML-->
+    <div id="sign_in_modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="close2">&times;</span>
+                <h2>Welcome Back</h2>
+                <hr>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="Username" required id="username-in">
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required id="password-in">
+                    <br>
+                    <button type="submit" id="in_button">Sign In</button><br>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <span>Not a member?</span><a href="#" id="nam">Sign Up</a>
+            </div><br>
+        </div>
+    </div>
+
+    <!-- adding the sign up form-->
+    <!--Step 1:Adding HTML-->
+    <div>
+        <div id="sign_up_modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" id="close1">&times;</span>
+                    <h2>Get Started</h2>
+                    <hr>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter Full Name" name="Full Name" required id="full_name">
+                        <label>Username </label>
+                        <input type="text" placeholder="Enter Username" name="Full Name" required id="username">
+                        <label> Password </label>
+                        <input type="password" placeholder="Enter Password" name="password" required id="password">
+                        <label>Confirm Password </label>
+                        <input type="password" placeholder="Confirm Password" name="Confirm Password" required id="confirm_password"><br>
+                        <button type="submit" id="up_button">Sign Up</button><br>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- create post model -->
+    <!-- Modal body or Modal Display -->
+    <div id="createPostModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" id="create-post-modal-content">
+            <h2>Create Your Post<span id="closePost" class="close">&times;</span></h2>
+
+            <p>Title:</p>
+            <input class="inp" id="title" type="text" placeholder="Enter Post Title ....." required>
+            <p>Content:</p>
+            <textarea rows="20" id="createPost" placeholder="Enter Post Content ....."></textarea>
+            <button id="createPOSTbutton">Create</button>
+        </div>
+    </div>
+
+
+    <!-- Place all Javascript for header in this file -->
+    <script src="js\header.js"></script>
+    <!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+
+</html>

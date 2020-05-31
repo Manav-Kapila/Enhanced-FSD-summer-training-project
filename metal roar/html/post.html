@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='..\css\post.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="postHeader">
+    <div id="main-container-div">
+        <div class="header">
+            <!-- Insert code for Sign Up, Sign In button here. 
+               Add code for "Logo" heading and the sub-heading -->            
+             <div id="logo">
+                <p id="myLogo">Infinity&Beyond</p>
+                <p id="tag">Have to think BIG to be BIG</p>
+             </div>
+             <div id="in_up">
+                <button id="in_modal">Sign In</button>
+                <button id="up_modal">Sign Up</button>                
+             </div>
+        </div>
+    </div>
+    </div>
+    <!-- functioning og sign in and sign up modals -->
+    <!-- adding the sign in form-->
+    <!--Step 1:Adding HTML-->
+    <div id="sign_in_modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="close2">&times;</span>
+                <h2>Welcome Back</h2>
+                <hr>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="Username" required id="username-in">
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required id="password-in">
+                    <br>
+                    <button type="submit" id="in_button">Sign In</button><br>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <span>Not a member?</span><a href="#" id="nam">Sign Up</a>
+            </div><br>
+        </div>
+    </div>
+    <div>
+        <div id="sign_up_modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" id="close1">&times;</span>
+                    <h2>Get Started</h2>
+                    <hr>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter Full Name" name="Full Name" required id="full_name">
+                        <label>Username </label>
+                        <input type="text" placeholder="Enter Username" name="Full Name" required id="username">
+                        <label> Password </label>
+                        <input type="password" placeholder="Enter Password" name="password" required id="password">
+                        <label>Confirm Password </label>
+                        <input type="password" placeholder="Confirm Password" name="Confirm Password" required id="confirm_password"><br>
+                        <button type="submit" id="up_button">Sign Up</button><br>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- internal parts of posts.html file -->
+    <div class="blogContent">
+        <div id="blogTitle" class="blogTite">
+            <h id="blogTitleNew" class="myBorder" contenteditable="false">The legacy of Jimi Hendrix</h>
+        </div>
+
+        <div class="blogAuthor">
+
+            <!-- Insert code for Edit/Save button and  -->
+            <button onclick="myFunction(this);" id="editButton">Edit <i class="fa fa-edit"></i></button>
+
+            <!-- post content down here   -->
+            <p>Manav Kapila</p>
+        </div>
+
+        <div class="blogText">
+            <p id="blogBody" contenteditable="false">
+                Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative
+                application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American
+                folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped
+                to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique
+                during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and
+                the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb
+                41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players
+                before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar,
+                there are but two eras before Hendrix and after Hendrix."
+            </p>
+        </div>
+
+        <!-- Insert code for Like button, Comment button, Comment box here-->
+
+        <!-- adding like button -->
+        <div id="alignLeft">
+            <button id="likeMe" onclick="AddLikes()"><i onclick="myFunction2(this)" class=" fa fa-thumbs-up"></i> Like </button><br>
+            <p id="CountedClicks">Be the first one to like this!</p><br>
+
+            <!--comments block-->
+            <!-- adding comment box and button -->
+            <div class="comment">
+                <textarea required id="addComment" rows="5" cols="64" placeholder="Leave a comment..."></textarea>
+                <br>
+                <button onclick="comment()" id="commentBtn">Comment</button>
+                <!-- Comment upload button -->
+                <!-- adding comments to comment section -->
+                 <p id="commentHeader">All Comments</p>
+                <div id="newCommentHolder"></div>
+            </div>
+
+
+            <!--      <div id="display">
+                <p class="user-comments"></p>
+            </div>   -->
+
+        </div>
+
+        <script src="..\js\post.js" defer></script>
+        <script src="..\js\header.js">
+        </script>
+
+</body>

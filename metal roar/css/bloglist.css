@@ -1,0 +1,266 @@
+/* Style and position the blog posts */
+
+.post {
+    position: relative;
+    width: 90%;
+    height: 20%;
+    flex: 1;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin: 20px 50px 20px 50px;
+    float: left;
+    border-radius: 15px;
+}
+
+
+/* Style the blog author name */
+
+.post-left {
+    width: 15%;
+    max-width: 15%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    color: darkslateblue;
+}
+
+
+/* Style the blog post main content */
+
+.post-content {
+    width: 75%;
+    display: table-cell;
+    text-align: left;
+    background-color: #E8E8E8;
+    color: #000000;
+    margin-top: 5px;
+    border-radius: 0 15px 15px 0;
+    padding: 0 20px 20px 20px;
+}
+
+
+/* Style the main heading of the blog post */
+
+.post-title {
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    color: darkslateblue;
+    font-size: 25px;
+    height: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 7px;
+}
+
+
+/* Style the Bin and ellipsis button on the blog post */
+
+.post-more {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: darkslateblue;
+}
+
+
+/* Styles the blog post main content */
+
+.post-desc {
+    height: 100px;
+    margin-bottom: 0 !important;
+    text-overflow: none;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+
+/* Stles the last blog post on the blog list */
+
+#last {
+    flex: 0.46;
+}
+
+
+/* Styles the Bloglist page body */
+
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 !important;
+    color: #fff;
+    background-color: #293139;
+    background-size: 2000% 2000%;
+}
+
+
+/* Styles the Blog post container */
+
+.allPostsContainer {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Style for the Modals on the page header */
+
+
+/* Style for the input fields in the modals */
+
+.inp {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    display: block;
+    width: 98%;
+    height: 44px;
+}
+
+
+/* Style for the modal button holder */
+
+.postButtons {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -150px;
+}
+
+
+/* Main Header Modal Content */
+
+.modal-content {
+    position: relative;
+    top: -34px;
+    color: black;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+
+/* The Close Button on Modals */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Create flex for posts */
+
+#one,
+#two,
+#three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* styling and resizing delete confirm modal */
+
+#del .modal-content {
+    width: 40%;
+    height: 20%;
+    padding: 15px;
+    margin-top: 10%;
+    text-align: justify;
+}
+
+
+/* styling NO button of delete modal*/
+
+#neg {
+    background-color: rgb(3, 156, 3);
+    float: right;
+    margin-right: 20px;
+    display: inline-block;
+    color: white;
+    width: 40%;
+    padding: 10px;
+    font-size: x-large;
+}
+
+
+/* styling YES button of delete modal*/
+
+#pos {
+    background-color: red;
+    display: inline-block;
+    color: white;
+    float: left;
+    width: 40%;
+    padding: 10px;
+    font-size: x-large;
+}
+
+/* Responsive media queries   */
+@media screen and (max-width:680px){
+    
+    #myLogo{
+        font-size: 36px;
+    }
+     #tag{
+        font-size: 16px;
+    }
+    #in_up {
+        padding: 0;
+        }
+    #up_modal, #in_modal{
+        border-radius: 50%;
+    }
+    #one,
+    #two,
+    #three {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        width: 90%;
+    }
+    .post-title {
+    font-size: 16px;
+    height: 1px;
+    padding-bottom: 10%;
+    margin-bottom: 0.1%;
+    }
+    .post-content {
+    width: 85%;
+    padding: 0;
+    }
+    .fa-trash:before {
+    font-size: 1.5rem;
+    }
+    #del .modal-content{
+    width: 80%;
+    height: 10%;
+    padding: 6%;
+    text-align: center;
+    margin: auto;
+    margin-top: 12rem;
+    border-radius: 20px;
+    }
+    #pos, #neg{
+        font-size: smaller;
+    }
+}
